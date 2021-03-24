@@ -11,36 +11,37 @@ body {
 .pop-up-container {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    // justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 
 .pop-up-box {
-    position: absolute;
+    position: relative;
     top: 0.5rem;
     display: none;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-
+    padding: 10px 20px;
     font-size: 1.3rem;
-    width: 350px;
-    // padding: 10px;
+    width: 365px;
+    padding: 10px;
     background-color: #ecf0f1;
     color: #19222b;
 
     .fa-exclamation-triangle {
         color: #d33423;
-        margin-left: 5px;
+        margin: 0 5px;
     }
 
     .close-box {
+        position: absolute;
+        right: 0%;
         background-color: #c7d5d6;
         padding: 10px 12px;
         cursor: pointer;
         display: flex;
-        justify-content: space-between;
         align-items: center;
 
         .fa-times {
@@ -52,6 +53,10 @@ body {
 }
 
 .delete {
+    position: relative;
+    top: 50%;
+    transform: translateS(-50%);
+
     padding: 8px 12px;
     font-size: 1.2rem;
     border-radius: 8px;
@@ -80,5 +85,16 @@ body {
     100% {
         top: 0.7rem;
         opacity: 1;
+    }
+}
+
+@media (max-width:500px) {
+    .pop-up-box {
+        width: 320px;
+        font-size: 1.1rem;
+
+        .close-box {
+            padding: 8px;
+        }
     }
 }
