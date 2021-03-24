@@ -20,7 +20,7 @@ body {
   position: absolute;
   top: 5px;
   display: none;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   padding: 10px 20px;
@@ -30,16 +30,19 @@ body {
   color: #19222b;
 }
 
-.pop-up-box .fa-exclamation-triangle {
+.pop-up-box .left-msg {
+  display: flex;
+}
+
+.pop-up-box .left-msg .fa-exclamation-triangle {
   color: #d33423;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .pop-up-box .close-box {
-  position: absolute;
-  right: -95px;
   background-color: #c7d5d6;
   padding: 10px 12px;
+  margin-left: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -84,12 +87,12 @@ body {
 
 @media (max-width: 500px) {
   .pop-up-box {
-    width: 320px;
-    font-size: 1rem;
+    width: 90%;
+    font-size: 0.8rem;
   }
   .pop-up-box .close-box {
-    padding: 7px;
-    right: -15px;
+    font-size: 0.8rem;
+    padding: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
