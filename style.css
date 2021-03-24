@@ -1,0 +1,120 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+}
+
+.pop-up-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pop-up-box {
+  position: absolute;
+  top: 0.5rem;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.3rem;
+  width: 350px;
+  background-color: #ecf0f1;
+  color: #19222b;
+}
+
+.pop-up-box .fa-exclamation-triangle {
+  color: #d33423;
+  margin-left: 5px;
+}
+
+.pop-up-box .close-box {
+  background-color: #c7d5d6;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pop-up-box .close-box .fa-times {
+  color: #a254c4;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.delete {
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: show 0.4s ease-in-out;
+          animation: show 0.4s ease-in-out;
+}
+
+@-webkit-keyframes show {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  100% {
+    top: 0.7rem;
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  100% {
+    top: 0.7rem;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
