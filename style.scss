@@ -24,8 +24,8 @@ body {
     align-items: center;
     flex-direction: row;
     padding: 10px 20px;
-    font-size: 1.3rem;
-    width: 365px;
+    font-size: 1.2rem;
+    // width: 365px;
     padding: 10px;
     background-color: #ecf0f1;
     color: #19222b;
@@ -37,7 +37,7 @@ body {
 
     .close-box {
         position: absolute;
-        right: 0%;
+        right: -95px;
         background-color: #c7d5d6;
         padding: 10px 12px;
         cursor: pointer;
@@ -91,10 +91,11 @@ body {
 @media (max-width:500px) {
     .pop-up-box {
         width: 320px;
-        font-size: 1.1rem;
+        font-size: 1rem;
 
         .close-box {
-            padding: 8px;
+            padding: 7px;
+            right: -15px;
         }
     }
 }
