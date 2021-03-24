@@ -1,8 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,32 +10,19 @@ body {
 
 .pop-up-container {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pop-up-box {
-  position: relative;
-  top: 0.5rem;
+  position: absolute;
+  top: 5px;
   display: none;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
   padding: 10px 20px;
   font-size: 1.3rem;
   width: 365px;
@@ -56,12 +42,8 @@ body {
   background-color: #c7d5d6;
   padding: 10px 12px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .pop-up-box .close-box .fa-times {
@@ -72,9 +54,6 @@ body {
 
 .delete {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateS(-50%);
-          transform: translateS(-50%);
   padding: 8px 12px;
   font-size: 1.2rem;
   border-radius: 8px;
@@ -86,25 +65,8 @@ body {
 }
 
 .show {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-animation: show 0.4s ease-in-out;
-          animation: show 0.4s ease-in-out;
-}
-
-@-webkit-keyframes show {
-  0% {
-    top: 0;
-    opacity: 0;
-  }
-  3% {
-    opacity: 0;
-  }
-  100% {
-    top: 0.7rem;
-    opacity: 1;
-  }
+  animation: show 0.4s ease-in-out;
 }
 
 @keyframes show {
